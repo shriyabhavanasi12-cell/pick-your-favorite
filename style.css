@@ -105,3 +105,50 @@ z-index:1;
     margin:auto;
 }
 
+.content{
+
+width:100%;
+border-radius: 5px;
+box-shadow: 5px 5px black;
+padding: 5px;
+font-size: 24px;
+opacity:0;
+
+}
+
+.seventies{
+
+    background-color:var(--70s-body);
+    color: var(--70s-text-colour);
+    nav{
+background-color:var(--90s-nav-bar);
+
+
+    }
+}
+
+.eighties{
+
+background-color:var(--80s-body);
+color:var(--80s)
+nav{
+
+  background-color:var(--80s-nav-bar);
+}
+}
+
+.nineties{
+background-color: var(--90s-body);
+color:var(--90s-text-colour);
+  nav {
+    background-color:var(--90s-nav-bar);
+  }
+
+}
+
+#slot-1{
+
+  grid-row-start:2;
+  grid-row-end:3;
+}
+

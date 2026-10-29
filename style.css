@@ -47,3 +47,61 @@ nav {
   width: 100%;
   background-color: var(--nav-bar);
 }
+
+.dropdown{
+width: 300px;
+font-size:medium;
+padding: 5px;
+display:flex;
+min-height:flex;
+flex-direction:column;
+
+}
+button{
+
+width:100%;
+border:none;
+background-color:white;
+font-size:28px;
+font-family:inherit;
+}
+
+#dropdown-options{
+
+position:relative;
+display:none;
+color:white;
+min-width:140px;
+text-align:center;
+z-index:1;
+
+}
+
+#dropdown-options.open{
+
+    display:flex;
+    flex-direction:column;
+    z-index:1;
+
+
+}
+#instruction{
+    height:100vh;
+    h1{
+
+        font-size:62px;
+    }
+
+
+}
+
+#content-holder{
+    grid-template-rows: repeat(3, 100vh auto);
+}
+
+#content-holder > h1{
+
+    font-size: 3em;
+    margin:auto;
+}
+

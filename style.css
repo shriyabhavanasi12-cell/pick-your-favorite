@@ -152,3 +152,51 @@ color:var(--90s-text-colour);
   grid-row-end:3;
 }
 
+#slot-1.seventies{
+  background-color: var(--slot1-seventies);
+  color:white;
+}
+
+#slot-1.eighties{
+
+  background-color:var(--slot1-eighties);
+  color:white;
+}
+
+#slot-1.nineties{
+
+background-color:var(--slot1-nineties);
+color:white;
+
+}
+
+#slot-2{
+
+  grid-row-start:4;
+  grid-row-end:5;
+}
+
+#slot-2.seventies{
+
+  background-color: var(--slot2-seventies);
+  color:white;
+
+}
+#slot-2.eighties{
+  background-color:var(--slot1-eighties);
+  color:white;
+
+}
+#slot-2.nineties {
+
+  background-color: var(--slot2-nineties);
+color:black;
+}
+
+#slot-3{
+
+  grid-row-start: 6;
+  grid-row-end: 7;
+
+}
+

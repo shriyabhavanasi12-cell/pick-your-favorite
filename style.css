@@ -214,3 +214,89 @@ color:black;
 background-color:var(--slot3-nineties);
 color:black;
 }
+
+@keyframes appear{
+
+  from{
+    opacity:0;
+
+  }
+  to{
+    opacity:1
+  }
+}
+
+.fade-in{
+opacity:1;
+animation: appear 2s ease;
+
+}
+@keyframes  grow{
+from{
+  transform:scale(0);
+  opacity:0;
+}
+
+to{
+transform:scale(1);
+opacity: 1;
+}
+
+}
+.grow-in{
+  opacity:1;
+  animation:grow 2s ease;
+}
+
+@keyframes rise{
+  from{
+    transform: translateY(20%);
+    opacity: 0;
+  }
+to{
+transform:translateY(-70%);
+opacity:1;
+
+}
+  
+}
+.rise-in{
+  opacity:1;
+  transform:translateY(-70%);
+  animation: rise 2s ease;
+}
+
+@keyframes slide-in-left{
+from{
+  transform:translatex(-70%);
+  opacity:0;
+}
+to{
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+}
+.slide-left{
+opacity: 1;
+animation: slide-in-left 2s ease;
+
+}
+@keyframes slide-in-right{
+from{
+
+  transform: translatex(70%);
+  opacity:0;
+}
+to{
+  transform:translateX(0%);
+  opacity: 1;
+}
+
+}
+.slide-right{
+
+  opacity:1;
+  animation: slide-in-right 2s ease;
+  
+}

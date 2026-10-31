@@ -200,3 +200,17 @@ color:black;
 
 }
 
+#slot-3.seventies{
+
+background-color:var(--slot3-seventies);
+color:black;
+}
+
+#slot-3.eighties{
+  background-color: var(--slot3-eighties);
+  color:black;
+}
+#slot-3.nineties{
+background-color:var(--slot3-nineties);
+color:black;
+}

@@ -84,3 +84,55 @@ slot3.innerHTML= "<h1>Discoveries and Advancements</h1> \n \
           </p>";
   localStorage.setItem("choice", "seventies");
 }
+
+function option2(){
+    clear();
+     instruction.style.display='none';
+     content.style.display="grid";
+
+     body.classList.add("eighties");
+
+     title.innerHTML="1980s";
+
+     slot1.classList.add("eighties ");
+     slot1.innerHTML="<h1> Fashion</h1> \n \
+     <p> \n \
+   <strong>Punk Rock Rebellion : </strong> The 1980s saw the continuation of punk fashion ,charecterised by rebellion and DIY aesthetics.Leather jackets adorned with studs and patches,ripped jeans and band t-shirts were staples of the punk look. Mohawks, spiked hair and heavy eye makeup were popular among both men and women , reflecting the subversive attitude of the punk movement .\n \
+     </p> \n \
+     <p> \n \
+   <strong> Preppy Style: </strong> Preppy fashion became mainstream in the 1980s,inspired by the collegiate look of Ivy league universities.This style featured clean-cut clothing such as button-down shirts ,cable-knit sweaters ,khaki pants,and plaid skirts.Pastel colors and bold stripes were commonly seen in prepppy attire,along with accessorieslike boat shoes,pearl necklaces and headbands. \n \
+     </p> \n \
+     <p> \n \
+ <strong> Power Dressing: </strong> The 1980s witnessed the rise of power dressing ,especially among working women,who aimed to assert their authority in the workplace .Power suits with padded shoulders ,tailored blouses and high-waisted trousers became emblematics of this trend .Bold colors, geometric patterns and statement jewelry were used to exude confidence and professionalism .\n \
+     </p> \n \
+     <p> \n \
+              <strong>New Wave Fashion:</strong> New Wave music heavily influenced fashion in the 1980s, giving rise to a futuristic and eclectic style. This aesthetic featured asymmetrical cuts, bright neon colors, and unconventional silhouettes. Fishnet stockings, leather skirts, and oversized blazers were popular items in the New Wave wardrobe. Hairstyles like the mullet and the asymmetrical bob complemented this edgy and avant-garde look. \n \
+          </p>";
+  slot2.classList.add("eighties");
+  slot2.innerHTML = "<h1>Music</h1> \n \
+          <p> \n \
+  <strong>Pop Dominance:</strong> The 1980s were characterised by the rise of pop music as a dominant force in the mainstream. Synthesizers, drum machines, and electronic production techniques became prevalent, shaping the sound of '80s pop hits. Iconic artists like Michael Jackson, Madonna, and Prince achieved unprecedented success with their catchy melodies, flashy music videos, and larger-than-life personas. The MTV generation further propelled pop music into the spotlight, as music videos became a crucial marketing tool for artists. \n \
+          </p> \n \
+          <p> \n \
+   <strong>New Wave Revolution:</strong> New Wave music emerged in the late 1970s and reached its peak popularity in the 1980s, blending elements of punk rock, electronic music, and avant-garde art. Bands like Depeche Mode, Duran Duran, and The Cure embraced synthesizers and drum machines to create a futuristic and eclectic sound. New Wave songs often featured catchy hooks, danceable rhythms, and introspective lyrics, reflecting the angst and optimism of youth culture in the '80s. \n \
+          </p> \n \
+          <p> \n \
+  <strong>Heavy Metal Explosion:</strong> The 1980s witnessed a surge in popularity for heavy metal music, fueled by bands like Metallica, Iron Maiden, and Guns N' Roses. Known for its loud guitars, aggressive vocals, and theatrical performances, heavy metal became a cultural phenomenon in the '80s. Subgenres like thrash metal, glam metal, and hair metal attracted legions of dedicated fans, while controversial themes and imagery sparked debates about censorship and morality. \n \
+          </p>";
+  
+
+         slot3.classList.add("eighties");
+  slot3.innerHTML = "<h1>Discoveries and Advancements</h1> \n \
+          <p> \n \
+  <strong>Personal Computing Boom:</strong> The 1980s witnessed a surge in personal computing, as technological advancements and market demand drove the adoption of PCs worldwide. The introduction of the IBM PC in 1981 set a standard for compatibility and sparked a wave of clones and competitors. Microsoft's MS-DOS operating system became ubiquitous on IBM-compatible computers, laying the groundwork for the dominance of Windows in the future. The graphical user interface (GUI) revolutionized computing with the release of Apple's Macintosh in 1984, making computers more intuitive and user-friendly. \n \
+          </p> \n \
+          <p> \n \
+  <strong>HIV/AIDS Discovery:</strong> The 1980s saw the identification of the human immunodeficiency virus (HIV) as the cause of acquired immunodeficiency syndrome (AIDS), a devastating pandemic that emerged in the early 1980s. Scientists isolated and characterized HIV in 1983, leading to improved understanding of the virus's transmission and pathogenesis. The discovery of HIV paved the way for diagnostic tests, antiretroviral therapies, and public health interventions to combat the spread of AIDS and support affected individuals. \n \
+          </p> \n \
+          <p> \n \
+     <strong>End of the Cold War:</strong> The 1980s marked the end of the Cold War, a decades-long geopolitical conflict between the United States and the Soviet Union. Diplomatic efforts like détente and arms control negotiations helped ease tensions between the superpowers, culminating in the historic events of 1989-1991. The fall of the Berlin Wall in 1989 symbolized the collapse of communism in Eastern Europe, while the dissolution of the Soviet Union in 1991 heralded the end of the bipolar world order and the beginning of a new era of global politics. \n \
+          </p>";
+        
+  localStorage.setItem("choice", "eighties");
+}
+

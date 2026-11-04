@@ -37,7 +37,7 @@ dropdown.classList.remove("open");
 function option1(){
     clear();
     instruction.style.display='none';
-    content.style.display='block';
+    content.style.display='grid';
 
     body.classList.add("seventies");
 

@@ -136,3 +136,105 @@ function option2(){
   localStorage.setItem("choice", "eighties");
 }
 
+function option3(){
+  clear();
+
+  instruction.style.display = 'none';
+  content.style.display = "grid";
+
+  body.classList.add("nineties");
+
+  title.innerHTML = "1990s";
+
+  slot1.classList.add("nineties");
+  slot1.innerHTML = "<h1>Fashion</h1> \n \
+          <p> \n \
+            <strong>Grungy Chic:</strong> The 1990s saw the rise of grunge fashion, influenced by the music scene in Seattle and characterised by its casual, unkempt aesthetic. Flannel shirts, ripped jeans, combat boots, and band t-shirts were emblematic of the grunge look. Layering was key, with oversized sweaters worn over t-shirts and topped with a denim jacket. This anti-establishment style rejected the flashy excess of the 1980s in favor of a more laid-back and authentic vibe. \n \
+          </p> \n \
+          <p> \n \
+            <strong>Minimalist Elegance:</strong> Minimalism emerged as a dominant trend in 1990s fashion, characterised by clean lines, neutral colors, and understated sophistication. Simple silhouettes such as slip dresses, tailored blazers, and high-waisted trousers were favored by minimalist fashionistas. Fabrics like silk, satin, and cashmere added a touch of luxury to the minimalist wardrobe, while accessories were kept minimal to maintain a sleek and refined look. \n \
+          </p> \n \
+          <p> \n \
+            <strong>Retro Revival:</strong> The 1990s witnessed a resurgence of interest in fashion from past decades, particularly the 1960s and 1970s. This retro revival manifested in trends like babydoll dresses, platform shoes, and psychedelic prints. Vintage clothing stores became popular destinations for fashion enthusiasts seeking unique and nostalgic pieces. Mixing and matching vintage items with contemporary staples allowed individuals to express their individuality while paying homage to fashion history. \n \
+          </p> \n \
+          <p> \n \
+            <strong>Streetwear Culture:</strong> Streetwear culture flourished in the 1990s, fueled by the rise of hip-hop and urban youth subcultures. Baggy jeans, oversized hoodies, and graphic t-shirts became iconic elements of streetwear fashion. Sneakers played a crucial role in street style, with brands like Nike and Adidas dominating the market. Bold logos, graffiti-inspired graphics, and sporty accents were hallmarks of streetwear brands, reflecting the influence of urban culture on mainstream fashion. \n \
+          </p>";
+  slot2.classList.add("nineties");
+  slot2.innerHTML = "<h1>Music</h1> \n \
+          <p> \n \
+            <strong>Grunge Revolution:</strong> The 1990s saw the rise of grunge music as a reaction against the commercialization of rock music in the '80s. Bands from Seattle, such as Nirvana, Pearl Jam, and Soundgarden, spearheaded the grunge movement with their raw, angst-ridden sound and DIY ethos. Grunge songs often featured distorted guitars, mumbled vocals, and introspective lyrics, reflecting the disillusionment and alienation of Generation X. \n \
+          </p> \n \
+          <p> \n \
+            <strong>Hip-Hop Golden Age:</strong> The 1990s are often regarded as the golden age of hip-hop, as the genre exploded in popularity and diversity. East Coast artists like Wu-Tang Clan, Notorious B.I.G., and Nas brought gritty storytelling and lyrical prowess to the forefront, while West Coast rappers like Tupac Shakur and Dr. Dre pioneered gangsta rap with its tales of street life and social commentary. The 1990s also saw the rise of alternative hip-hop, with groups like A Tribe Called Quest and De La Soul blending jazz, funk, and conscious lyrics. \n \
+          </p> \n \
+          <p> \n \
+            <strong>Electronic Dance Music (EDM) Emergence:</strong> The 1990s witnessed the emergence of electronic dance music (EDM) as a global phenomenon, with genres like house, techno, and trance gaining widespread popularity. DJs and producers like Daft Punk, The Chemical Brothers, and Fatboy Slim pushed the boundaries of electronic music, incorporating futuristic sounds and infectious beats into their compositions. Raves and dance clubs became hubs of EDM culture, where revelers could immerse themselves in a euphoric and transcendental experience. \n \
+          </p>";
+  
+  slot3.classList.add("nineties");
+  slot3.innerHTML = "<h1>Discoveries and Advancements</h1> \n \
+          <p> \n \
+            <strong>World Wide Web:</strong> The 1990s saw the creation and rapid expansion of the World Wide Web, transforming the way people communicate, access information, and conduct business. In 1990, Tim Berners-Lee invented the hypertext transfer protocol (HTTP) and the first web browser, laying the foundation for the internet as we know it today. The launch of the first commercial web browser, Netscape Navigator, in 1994 popularized the internet among the general public, leading to the dot-com boom and the rise of e-commerce. \n \
+          </p> \n \
+          <p> \n \
+            <strong>Human Genome Project:</strong> The 1990s marked the launch of the Human Genome Project, an international effort to map and sequence the entire human genome. The project aimed to unravel the genetic blueprint of humanity, providing insights into the structure, function, and evolution of our DNA. The completion of the Human Genome Project in 2003 represented a monumental achievement in genetics and paved the way for personalized medicine, genetic testing, and gene therapy. \n \
+          </p> \n \
+          <p> \n \
+            <strong>Cloning of Dolly the Sheep:</strong> In 1996, scientists at the Roslin Institute in Scotland made headlines with the successful cloning of Dolly the Sheep, the world's first cloned mammal. Dolly was created using a technique called somatic cell nuclear transfer, which involved transferring the nucleus of an adult sheep cell into an egg cell and then implanting it into a surrogate mother. Dolly's birth sparked ethical debates about the implications of cloning and raised questions about the nature of genetic identity and reproduction. \n \
+          </p>";
+  localStorage.setItem("choice", "nineties");
+}
+
+const slot1observer = new IntersectionObserver(
+  (entries) => {
+    if (entries[0].isIntersecting) {
+  
+      slot1.classList.add("fade-in");
+    }
+  }
+);
+slot1observer.observe(slot1);
+const slot2observer=new IntersectionObserver(
+
+  (entries)=>{
+
+    if(entries[0].isIntersection){
+      slot2.classList.add("rise-in");
+
+    }
+  }
+);
+
+slot2observer.observe(slot2);
+ 
+const slot3observer=new IntersectionObserver(
+  (entries)=>{
+    if(entries[0].isIntersecting){
+
+      slot3.classList.add("grow-in");
+    }
+  }
+);
+slot3observer.observe(slot3);
+
+document.addEventListener("DOMContentLoaded", function(){
+  const choice =localStorage.getItems("choice");
+
+  if (choice =="seventies"){
+    option();
+  }else if(choice=="nineties"){
+
+    option3();
+
+  }
+
+
+});
+
+function reset(){
+  clear();
+  content.style.display="";
+  instruction.style.display='flex';
+  localStorage.setItems("choice", "");
+}

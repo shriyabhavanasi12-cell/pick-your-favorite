@@ -22,7 +22,7 @@ const slot2=document.querySelector("#slot-2");
 const slot3=document.querySelector("#slot-3");
 
 function clear(){
-body.classList.remove='';
+
 
 body.classList='';
 slot1.classList='content';
@@ -34,7 +34,7 @@ dropdown.classList.remove("open");
 
 }
 
-function option(){
+function option1(){
     clear();
     instruction.style.display='none';
     content.style.display='block';
@@ -71,7 +71,7 @@ function option(){
 
 
 
-slot3.classList.add("seventies ");
+slot3.classList.add("seventies");
 slot3.innerHTML= "<h1>Discoveries and Advancements</h1> \n \
           <p> \n \
             <strong>Personal Computing:</strong> The 1970s saw the birth of the personal computer revolution, with the development of groundbreaking technologies like the microprocessor and the floppy disk. Companies like Apple, Microsoft, and IBM introduced early PCs to the market, making computing accessible to individuals and businesses alike. Innovations such as the Altair 8800 and the Apple II paved the way for the digital age, laying the foundation for the modern computer industry. \n \
@@ -199,7 +199,7 @@ const slot2observer=new IntersectionObserver(
 
   (entries)=>{
 
-    if(entries[0].isIntersection){
+    if(entries[0].isIntersecting){
       slot2.classList.add("rise-in");
 
     }
@@ -219,10 +219,10 @@ const slot3observer=new IntersectionObserver(
 slot3observer.observe(slot3);
 
 document.addEventListener("DOMContentLoaded", function(){
-  const choice =localStorage.getItems("choice");
+  const choice =localStorage.getItem("choice");
 
   if (choice =="seventies"){
-    option();
+    option1();
   }else if(choice=="nineties"){
 
     option3();
@@ -236,5 +236,5 @@ function reset(){
   clear();
   content.style.display="";
   instruction.style.display='flex';
-  localStorage.setItems("choice", "");
+  localStorage.setItem("choice", "");
 }
